@@ -5,3 +5,4 @@ Assorted Python Tools I have createdf for a variety of small tasks. I am sure Ch
 img_converter - Script to convert WEBP files to PNG
 
 Geolocation tool using folium
+Map a variety of locations
