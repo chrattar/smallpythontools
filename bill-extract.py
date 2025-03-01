@@ -13,9 +13,8 @@ def extract_text_from_pdf(pdf_file):
     except Exception as e:
         print(f"Error extracting text from {pdf_file}: {str(e)}")
         return None
-
+#Strip all the customer info out of a generic PDF. Rewrite regex as req.
 def parse_text(text):
-    # Define regular expressions for key-value pairs
     patterns = {
         'Order Date': r'Order Date:\s*(\S+)',
         'Order No': r'Order No:\s*(\S+)',
