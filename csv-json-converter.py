@@ -1,11 +1,9 @@
 import csv
 import json
 
-# File paths
 csv_file_path = 'file'
 json_file_path = './filepath'
 
-# Read the CSV and convert to the desired JSON structure
 markers = []
 with open(csv_file_path, mode='r', encoding='utf-8') as csvfile:
     csvreader = csv.DictReader(csvfile)
@@ -18,7 +16,6 @@ with open(csv_file_path, mode='r', encoding='utf-8') as csvfile:
         }
         markers.append(marker)
 
-# Write data to a JSON file
 with open(json_file_path, mode='w', encoding='utf-8') as jsonfile:
     json.dump(markers, jsonfile, indent=4)
 
